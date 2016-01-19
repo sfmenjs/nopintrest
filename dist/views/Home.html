@@ -1,0 +1,55 @@
+	<div ng-controller="TestCtrl">
+		<div id="wrapper">
+			<div id="columns" ng-controller="HomeController as vm" >
+				<!-- New pins -->
+				<div class="pin" id="posts" ng-repeat="post in vm.posts | orderBy: '-dateCreated' | searchFilter: ix.search" >
+					<div class="show-image">
+						<img ng-src="{{post.img}}"  ng-click="open(post)"/>
+						<a href="{{post.url}}" target="_blank">
+							<span>
+								<h4>
+									{{post.title}}
+								</h4>
+							</span>
+						</a>
+						<hr>
+
+						<div class="hashT">
+							<span class="well" id="hashtagWell" ng-click="ix.search = hash" ng-repeat="hash in post.hashtag" ng-hide="!post.hashtag">
+								#{{hash}}
+							</span>	
+						</div>
+						<div class="hashT">
+							<button type="button" class='btn btn-danger btn-xs deleteButton' ng-click='vm.delete(post)'>X</button>
+
+						</div>
+						
+						<h4 id="nameAndIcons">
+							<img id="userIcon" ng-src="{{post.userImg}}">
+							<strong>{{post.username}}</strong>
+						</h4>
+
+					</div>
+					<!-- Modal -->
+					<script type="text/ng-template" id="myModalContent.html" ng-controller="HomeController as vm">
+						<div class="modal-header">
+							<h3 class="modal-title">{{post.title}}
+								<button type="button" class='btn btn-danger btn-xs' id="exitButton" ng-click="cancel()">X</button>
+							</h3>
+						</div>
+						<div class="modal-body">
+							<img ng-src="{{post.img}}" alt="" class="img-responsive">
+						</div>
+						<div class="modal-footer">
+							<div class="floatImgLeft">
+								<img id="userIcon" ng-src="{{post.userImg}}">
+								<span class="well" id="hashtagWell" ng-repeat="hash in post.hashtag" ng-hide="!post.hashtag">
+									#{{hash}}
+								</span>
+							</div>
+						</div>
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>

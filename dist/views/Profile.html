@@ -1,0 +1,34 @@
+<div ng-controller="TestCtrl">
+	<div id="wrapper">
+		<div id="columns" ng-controller="HomeController as vm" >
+			<!-- New pins -->
+			<div class="pin" ng-repeat="post in vm.posts | orderBy: '-dateCreated' | filter: search">
+				
+				<img ng-src="{{post.img}}"  ng-click="open(post)"/>
+				<a href="{{post.url}}" target="_blank">
+					<div class="show-image">
+						<h4>
+							{{post.title}}
+						</h4>
+					</a>
+					<button type="button" class='btn btn-danger btn-xs deleteButton' ng-click='vm.delete(post)'>X</button>
+				</div>
+
+				<!-- Modal -->
+				<script type="text/ng-template" id="myModalContent.html">
+					<div class="modal-header">
+						<h3 class="modal-title">{{post.title}}</h3>
+					</div>
+					<div class="modal-body">
+						<img ng-src="{{post.img}}" alt="" class="img-responsive">
+
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" ng-click="ok()">OK</button>
+						<button class="btn btn-danger" ng-click="cancel()">Cancel</button>
+					</div>
+				</script>
+			</div>
+		</div>
+	</div>
+</div>

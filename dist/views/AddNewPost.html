@@ -1,0 +1,46 @@
+<div id="loginBox" ng-controller="AddNewPostController as vm">
+  <form class="form-horizontal" ng-submit="vm.addPost()">
+    <fieldset>
+      <legend>Add post</legend>
+      <div class="form-group">
+
+        <label for="photoURL" class="col-lg-2 control-label">Add photo URL</label>
+        <div class="col-lg-10">
+          <input type="text" class="form-control" id="addPhoto" placeholder="www.photoURL.com" ng-model="vm.post.img">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="pageURL" class="col-lg-2 control-label">Add page link</label>
+        <div class="col-lg-10">
+          <input type="text" class="form-control" id="inputPassword" placeholder="www.pageURL.com" ng-model="vm.post.url">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="photoTitle" class="col-lg-2 control-label">Photo title</label>
+        <div class="col-lg-10">
+          <input type="text" class="form-control" id="photoTitle" placeholder="Add title here" maxlength="30" ng-model="vm.post.title">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="hashtag" class="col-lg-2 control-label">Description</label>
+        <div class="col-sm-12">
+          <input type="text" class="form-control" id="hashtag" ng-list placeholder="#hashtag" ng-model="vm.post.hashtag">
+        </div> 
+      </div>
+
+      <div>
+        <span class="btn btn-default hashList" ng-repeat="tag in vm.post.hashtag">#{{tag}}</span>
+      </div>
+      
+
+      <div class="form-group">
+        <div class="col-lg-10 col-lg-offset-2">
+          <button type="submit" class="btn btn-default">Submit</button>
+          <button type="button" ui-sref="home" class="btn btn-danger">Cancel</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</div>

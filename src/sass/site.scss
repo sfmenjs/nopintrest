@@ -1,0 +1,311 @@
+body {
+	font-family: "Helvetica Neue","Helvetica";
+	overflow-x: hidden;
+}
+
+.background {
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	background-image: url('sunset.jpg');
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	font-family: pacifico;
+	font-size: 100px;
+	padding-top: 5%;
+	margin-top: 0px
+}
+
+#loginBox {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+
+}
+
+.capital {
+	text-transform: capitalize;
+}
+
+#floatRight {
+	height: 50px;
+	width: 25px;
+	margin-right: 5px;
+}
+
+#dropDown {
+	margin-left: auto;
+
+}
+
+#dropDownToggle {
+	margin-right: auto;
+	width: auto;
+	padding-left: 5px;
+}
+
+#createAccount {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#register {
+	margin-top: 15%;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.control-label {
+	width: 25%;
+}
+
+.col-lg-10 {
+	width: 100%;
+	text-align: center;
+	margin-left: 0px;
+}
+
+.control-label {
+	text-align: left;
+}
+
+.form-horizontal {
+	text-align: left;
+}
+
+.loginForm {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logOutButton {
+	cursor: pointer;
+}
+
+.well {
+	padding: 0px 0px 50px 0px;
+	border-radius: 10px;
+}
+
+h5 {
+	word-wrap: break-word;
+	text-align: justify;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#wrapper {
+	width: 100%;
+	max-width: 100%;
+}
+
+#columns {
+	-webkit-column-count: 9;
+	-webkit-column-gap: 10px;
+	-webkit-column-fill: auto;
+	-moz-column-count: 9;
+	-moz-column-gap: 10px;
+	-moz-column-fill: auto;
+	column-count: 9;
+	column-gap: 15px;
+	column-fill: auto;
+}
+
+.pin {
+	padding-bottom: 5px;
+	display: inline-block;
+	background: #FEFEFE;
+	border: 2px solid #FAFAFA;
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 0 2px 15px;
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+	background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
+	opacity: 1;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+.pin img {
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	cursor: pointer;
+}
+
+.pin p {
+	font: 12px/18px Arial, sans-serif;
+	color: #333;
+	margin: 0;
+}
+
+
+@media (min-width: 1100px) {
+	#columns {
+		-webkit-column-count: 9;
+		-moz-column-count: 9;
+		column-count: 9;
+	}
+}
+
+#userName {
+	margin-top: 16px;
+	text-align: right;
+	text-transform: capitalize;
+}
+
+#bs-example-navbar-collapse-1 {
+	padding: 0px;
+}
+
+.img-responsive {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+}
+
+.modal-body {
+	padding: 0px;
+	background-color: black;
+}
+
+h4 {
+	font-family: "Helvetica Neue","Helvetica";
+	font-size: 14px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: justify;
+	margin-bottom: 0px;
+}
+
+div.show-image {
+	position: relative;
+	float:left;
+}
+div.show-image:hover img{
+	opacity: 1;
+}
+div.show-image:hover button {
+	display: block;
+}
+div.show-image button {
+	position:absolute;
+	display:none;
+}
+div.show-image button.deleteButton {
+	bottom: 0px;
+	right: 5px;
+	width: 24px;
+	height: 24px;
+	font-weight: bolder;
+	opacity: 0.5;
+}
+
+#addHashtag {
+	border-radius: 50%;
+	box-shadow: none;
+	color: white;
+	background-color: black;
+	border-width: 2px;
+	margin:2px 0;
+	border-color: #666666;
+	outline: none;
+}
+
+textarea {
+	resize: none;
+	overflow: auto;
+	width: 50%;
+}
+
+.hashList {
+	margin: 5px;
+}
+
+#hashtagWell {
+	height: 20px;
+	font-size: 12px;
+	border-radius: 1px;
+	margin: 2px;
+	padding: 4px;
+	display: inline-table;
+}
+
+#userImg {
+	width: 30px;
+	margin: 10px;
+}
+
+#posts {
+	padding-bottom: 5px;
+}
+
+hr {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#userIcon {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	margin: 5px 5px 5px 0px;
+	// float: left;
+}
+
+.floatImgLeft {
+	float: left;
+}
+
+#nameAndIcons {
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+#exitButton {
+	float: right;
+	width: 22px;
+	font-weight: bolder;
+}
+
+.hashT {
+	display: block;
+	margin-bottom: 3px;
+	width: 98%;
+}
+
+
+
+/* enable absolute positioning */
+.inner-addon {
+	position: relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+	position: absolute;
+	padding: 10px;
+	pointer-events: none;
+}
+
+/* align glyph */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
